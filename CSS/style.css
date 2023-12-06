@@ -5,60 +5,23 @@ body {
     text-align: center;
 }
 
+nav {
+    background-color: #333333;
+    overflow: hidden;
+}
 
-/* CSS Document */
-:root{
-   --color:white;
-   --fnd : #1b0202;
-   --fndRsp: white;
-   --colorRsp: black;
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-.cajaNav{
-   font-family: sans-serif;
-   display:flex;
-   justify-content: space-between;
-   background:var(--fnd);
-   color: var(--color);
-}
-.cajaNav .barNav{
-   margin:0 10px 0 0;
-}
-.cajaNav .titNav{
-   display:flex;
-   justify-content:space-between;
-   align-items:center;
-   flex: 1;
-   background:var(--fnd);
-   color:var(--color);
-   height:auto;
-}
-.cajaNav .titNav .toggle{
-   display:none;
-}
-.cajaNav .titNav .logo{
-   margin: 10px 10px;
-}
-.cajaNav .barNav {
-   display:flex;
-   list-style:none;
-   align-items: center;
-   padding:0;
-}
-.cajaNav .barNav li{
-   display:flex;
-   align-items:center;
-   padding: 0 20px ;
-   height:100%;
-}
-.cajaNav .barNav li:hover{
-   background: var(--color);
-   color:var(--fnd);
-   cursor: pointer;
-}
-.cajaNav .barNav li a{
-   text-decoration: none;
-   cursor: pointer;
-   color:inherit;
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
 }
 *{box-sizing: border-box}
 
