@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
-    <script src="./JS/javas.js"></script>
     <title>B-Academy</title>
     <link rel="shortcut icon" href="./IMG/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <nav>
+    <nav id="nav">
         <ul class="menu">
           <li class="item"><a href="#">Home</a></li>
           <li class="item"><a href="#merch">Merchandising</a></li>
@@ -21,6 +20,9 @@
           <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
+      <div class="burger-menu">&#9776;</div>
+    </div>
+
 
       <header>
         <h1>B-Academy</h1>
@@ -28,8 +30,8 @@
     
     <section id="hero">
         <img src="./IMG/torneo.jpg" alt="">
-        <button onclick= animation>
-            <span>Tournaments!</span>
+        <button>
+            <span><a href="#tour">Tournaments!</a></span>
         </button>
     </section>
     <div id="merch">
@@ -60,10 +62,10 @@
     </div>
     <section id="grid" class="target-section">
         <div class="grid-container2">
-            <div class="grid-item2"><img src="./IMG/miami.jpg"><h3 id="t">Miami</h3>
+            <div class="grid-item2"><img id="miami"src="./IMG/miami.jpg"><h3 id="t">Miami</h3>
                 <p id="text2">
                     In Miami it will take place the most valuable event in the hole United States of America, and we are happy to communicate that we are going to be offcial sponsors of it. The exact date is concreted in our Instagram, don't forget to follow us!!</p></div>
-            <div class="grid-item2"><img src="./IMG/Barcelona.jpg"><h3 id="t">Barcelona</h3>
+            <div class="grid-item2"><img id="barcelona" src="./IMG/Barcelona.jpg"><h3 id="t">Barcelona</h3>
                 <p id="text2">
                     Barcelona is one of the greatest cities to play basketball, actually, our personal best tournament is held by this spectacular city. Come and take some shoots with us in the court or just walk by to say hello! It will take place the 1st of February at 18 pm. We'll hope to see you there!
                 </p></div>
@@ -75,7 +77,7 @@
     <section>
         <div class="grid-container3">
             <div class="grid-item3">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3199.665329255975!2d-4.462540624258811!3d36.68254697432295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f9c2046d5abf%3A0xf3cb7615c7ad1ea8!2sPalacio%20de%20Deportes%20Jos%C3%A9%20Mar%C3%ADa%20Mart%C3%ADn%20Carpena!5e0!3m2!1sen!2ses!4v1702402189471!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3199.665329255975!2d-4.462540624258811!3d36.68254697432295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f9c2046d5abf%3A0xf3cb7615c7ad1ea8!2sPalacio%20de%20Deportes%20Jos%C3%A9%20Mar%C3%ADa%20Mart%C3%ADn%20Carpena!5e0!3m2!1sen!2ses!4v1702402189471!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="grid-item3">
                 <ul>
@@ -90,8 +92,19 @@
         </div>
     </section>
     <footer>
-        <p>&copy; 2023 Tu Página Web</p>
-        <img src="./IMG/insta.png" alt=""><img src="./IMG/facebook.png" alt=""><img src="./IMG/twitter.png" alt=""><img src="./IMG/youtube.png" alt=""><img src="./IMG/gmail.png" alt=""><img src="./IMG/whatsapp.png" alt="">
+        <p>&copy; 2023 B-Academy</p>
+        <nav id="foot">
+            <ul class="menu">
+              <li class="item"><a href="#">Home</a></li>
+              <li class="item"><a href="#merch">Merchandising</a></li>
+              <li class="item"><a href="#tour">Tournaments</a></li>
+              <li class="item"><a href="#contact">Contact</a>
+              </li>
+              <li class="item button"><a href="#">Log In</a></li>
+              <li class="item button secondary"><a href="#">Sign Up</a></li>
+              <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+          </nav>
     </footer>
 </body>
 </html>

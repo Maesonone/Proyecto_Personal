@@ -3,15 +3,14 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: orange;
+    background-color: rgb(255, 186, 57);
     width: 100%;
 }
 
 header {
-    background-color: orange;
-    color: blue;
+    background-color: rgb(255, 186, 57);
+    color: rgb(49, 131, 131) ;
     text-align: center;
-    padding: 0.3em;
 }
 
 h1 {
@@ -19,18 +18,18 @@ h1 {
     padding-top: 5%
 }
 
-nav {
-    background-color: rgb(84, 181, 181) ;
-    padding: 0.5em;
+#nav {
+    background-color: rgb(91, 200, 200) ;
     position: fixed;
     top: 0;
-    width: 100%;
-    opacity: 0.8;
+    width: 100vw;
+    opacity: 0.9;
 }
 
 
 
 /* Basic styling */
+
 * {
     box-sizing: border-box;
 }
@@ -66,6 +65,16 @@ nav {
     justify-content: space-between;
     align-items: center;
   }
+
+.menu ul{
+  display: none;
+}
+
+  .menu ul.show {
+    display: flex; /* Muestra el menú cuando tiene la clase 'show' */
+  }
+
+
   .toggle {
     order: 1;
   }
@@ -106,7 +115,7 @@ nav {
     }
     .button a {
       padding: 7.5px 15px;
-      background: orange;
+      background: rgb(244, 169, 30);
       border: 1px #006d6d solid;
     }
     .button.secondary a {
@@ -135,7 +144,7 @@ nav {
     .logo {
       order: 0;
     }
-    .item {
+    .item{
       order: 1;
     }
     .button {
@@ -218,7 +227,7 @@ button {
    }
 
   h2{
-    color: blue;
+    color: rgb(49, 131, 131);
     display: inline-block;
     border: 2px solid #333; /* Ancho y color del borde */
     padding: 10px; /* Espaciado interno */
@@ -269,12 +278,19 @@ button {
         .grid-container {
             grid-template-columns: repeat(2, 1fr);
         }
+        .grid-container3{
+          grid-template-columns: repeat(1, 1fr);
+        }
     }
+        
 
     /* Media query para cambiar a 1 columna cuando la pantalla es menor a 300px */
     @media (max-width: 600px) {
         .grid-container {
             grid-template-columns: 1fr;
+        }
+        .grid-container3 {
+          grid-template-columns: 1fr;
         }
     }
 
@@ -296,13 +312,27 @@ button {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       gap: 10px; /* Espacio entre las columnas */
-      width: 100vw; /* Ancho total de la ventana del navegador */
+      width: 80vw; /* Ancho total de la ventana del navegador */
+      padding-left: 20vw;
+  }
+
+  #miami{
+    width: 50%;
+  }
+
+  #barcelona{
+    width: 50%;
   }
 
   .grid-item2 {
     background-color: rgb(84, 181, 181); /* Color de fondo de cada ítem en el grid */
     padding: 20px;
     text-align: center;
+
+}
+
+#mapa{
+  width: 100%;
 }
 
 .grid-container3{
@@ -310,6 +340,12 @@ button {
       grid-template-columns: repeat(2, 1fr);
       gap: 20px; /* Espacio entre las columnas */
       width: 60vw; /* Ancho total de la ventana del navegador */
+}
+
+@media (max-width: 600px) {
+  .grid-container3 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .grid-item3{
@@ -334,3 +370,5 @@ footer {
     padding: 1em 0;
     bottom: 0;
 }
+
+
