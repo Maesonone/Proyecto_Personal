@@ -347,6 +347,12 @@ footer {
     bottom: 0;
 }
 
+#disclaimer{
+  font-size: 150%;
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
 /* Media query para cambiar a 2 columnas cuando la pantalla es menor a 600px */
 @media (max-width: 900px) {
   .grid-container {
